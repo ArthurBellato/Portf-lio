@@ -231,7 +231,7 @@ footer {
 
 .project-links {
     display: flex;
-    gap: 90px; /* Aumentando o espaço entre as imagens */
+    gap: 10px; /* Aumentando o espaço entre as imagens */
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -239,8 +239,8 @@ footer {
 .exs {
     position: relative;
     top: 70px;
-    width: 500px;
-    height: 300px; /* Aumentando ainda mais o tamanho das imagens */
+    width: 300px;
+    height: 150px; /* Aumentando ainda mais o tamanho das imagens */
     transition: transform 0.5s ease;
     cursor: pointer;
 }
@@ -253,8 +253,8 @@ footer {
 
     position: relative;
     top: 70px;
-    width: 500px;
-    height: 300px;
+    width: 350px;
+    height: 150px;
     background-color: gray;
     display: flex;
     justify-content: center;
