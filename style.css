@@ -1,0 +1,292 @@
+/* Adicionando a classe de animação de fade-in */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+/* Estilo do body e seções como antes */
+html {
+    scroll-behavior: smooth;
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    font-family: "Comfortaa", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #ffffff;
+    height: 100%;
+}
+
+main {
+    padding: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #c0c0c0;
+    box-sizing: border-box;
+    opacity: 0; /* Inicialmente oculto para o efeito fade-in */
+    transition: opacity 3.5s ease-in-out; /* Transição suave */
+}
+
+section.visible {
+    opacity: 1; /* Visível quando entra na viewport */
+}
+
+/* Outros estilos como antes */
+section#introducao {
+    background-color: #111111;
+}
+
+section#introducao h1 {
+    font-size: 4em;
+}
+
+section#introducao p {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+section#sobre-mim {
+    background-color: #111111;
+}
+
+section#educacao {
+    background-color: #111111;
+}
+
+section#habilidades {
+    background-color: #111111;
+}
+
+section#projetos {
+    background-color: #111111;
+}
+
+section#contato {
+    background-color: #111111;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section p, .project-links a {
+    font-size: 1.2em;
+}
+
+.project-links a {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    transition: transform 0.7s ease;
+    cursor: pointer;
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    transform: scale(1.2);
+}
+
+/* Novos estilos para as imagens das linguagens e especializações */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.roda1 {
+    max-width: 250px;
+    position: relative;
+    right: 0%;
+    position: relative;
+    top: 60px;
+}
+
+.edu1 {
+    max-width: 250px;
+    position: relative;
+    right: 0%;
+    position: relative;
+    bottom: 120px;
+}
+
+.prog1 {
+    max-width: 250px;
+    position: relative;
+    right: 0%;
+    position: relative;
+    bottom: 70px;
+}
+
+.gif1 {
+    max-width: 350px;
+    position: relative;
+    right: 0%;
+    position: relative;
+    bottom: 40px;
+}
+
+.project0 {
+    width: 500px;
+    height: 100px;
+    background-color: aqua;
+}
+
+.section.projetos {
+    gap: 80px;
+}
+
+.skill-icon {
+    max-width: 100px;
+    transition: transform 0.7s ease; /* Adiciona uma transição suave ao transformar */
+    cursor: pointer;
+}
+
+.skill-icon:hover {
+    transform: scale(1.4); /* Aumenta o tamanho da imagem quando o mouse passa por cima */
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+}
+
+.icons1 {
+    max-width: 5%;
+    transition: transform 0.7s ease; /* Adiciona uma transição suave ao transformar */
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+}
+
+.icons1:hover {
+    transform: scale(1.7);
+}
+
+.project-links {
+    display: flex;
+    gap: 90px; /* Aumentando o espaço entre as imagens */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.exs {
+    position: relative;
+    top: 70px;
+    width: 500px;
+    height: 300px; /* Aumentando ainda mais o tamanho das imagens */
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.exs:hover {
+    transform: scale(1.15);
+}
+
+.project-placeholder {
+
+    position: relative;
+    top: 70px;
+    width: 500px;
+    height: 300px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.full-screen-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.full-screen-image img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.dev2{
+    max-width: 200px;
+    position: relative;
+    right: 0%;
+    position: relative;
+    bottom: 40px;
+}
